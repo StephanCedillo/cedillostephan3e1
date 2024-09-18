@@ -10,9 +10,10 @@ import { CommonModule } from '@angular/common';
 })
 export class SideMenuComponent {
   userName: string = "Stephan Cedillo";
-  theme: string = "#9fa9be"; 
-  widthMenu: number = 50; 
+  theme: string = 'aliceblue'; 
+  widthMenu: number = 25; 
   visibleMenu: boolean = true;
+  marginLeft: number = 25;
 
   setVisibilityMenu(): void {
     this.visibleMenu = !this.visibleMenu;
@@ -24,6 +25,11 @@ export class SideMenuComponent {
 
   setWidth(): void {
     this.widthMenu += 10;
+    this.marginLeft += 10;
+    if (this.widthMenu > 100) {
+      this.widthMenu = 25;
+      this.marginLeft = 25;
+    }
   }
 }
 

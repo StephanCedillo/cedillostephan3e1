@@ -1,5 +1,5 @@
 <button class="btn" (click)="setVisibilityMenu()">Menu</button>
-<div class="palabra" [ngClass]="{ 'centered': visibleMenu }">
+<div class="palabra" [ngClass]="{ 'centered': visibleMenu }" [style.marginLeft]="marginLeft + 'vw'">
     <p>Ejercicio 2</p>
 </div>
 <div class="sidemenu"
@@ -27,4 +27,3 @@
         </div>
     </div>
 </div>
-
