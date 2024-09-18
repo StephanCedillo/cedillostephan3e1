@@ -1,0 +1,29 @@
+<button class="btn" (click)="setVisibilityMenu()">Menu</button>
+<div class="palabra" [ngClass]="{ 'centered': visibleMenu }">
+    <p>Ejercicio 2</p>
+</div>
+<div class="sidemenu"
+     [style.background]="theme"
+     [style.width]="widthMenu + 'vw'" 
+     [style.display]="visibleMenu ? 'flex' : 'none'">
+    <div class="itemBody">
+        <div class="itemHeader">
+            <img src="https://cdn-icons-png.flaticon.com/512/3135/3135768.png" alt="perfil.png">
+            <p>{{userName}}</p>
+            <button class="back-btn" (click)="setVisibilityMenu()"><span class="icon">🠔</span></button>
+        </div>
+
+        <div class="item">
+            <p><span class="icon">🏠</span>Dashboard</p>
+        </div>
+
+        <div class="item">
+            <p><span class="icon">👤</span>Profile</p>
+        </div>
+
+        <div class="item">
+            <button class="btn" (click)="setThemeColor('#9fa9be')">Change color</button>
+            <button class="btn" (click)="setWidth()">Change Size</button>
+        </div>
+    </div>
+</div>

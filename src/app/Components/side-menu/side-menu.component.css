@@ -1,0 +1,138 @@
+
+body {
+    margin: 0;
+    font-family: monospace;
+    background-image: url('https://blog.orange.es/wp-content/uploads/sites/4/2024/03/fondos-de-pantalla-3d-paisaje.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+}
+
+.palabra {
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    transition: all 0.3s ease; /* Añadir transición */
+}
+
+.centered {
+    position: absolute; /* Posiciona el texto en el medio del body */
+    top: 50%; /* Centramos verticalmente */
+    left: 50%; /* Centramos horizontalmente */
+    transform: translate(-50%, -50%); /* Ajustamos para que esté perfectamente centrado */
+}
+
+.sidemenu {
+    height: 100vh;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start; 
+    padding: 20px; 
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.5);
+    position: fixed; 
+    top: 0; 
+    left: 0; 
+    z-index: 1000; 
+    background: aliceblue; 
+}
+
+
+.itemHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    border-bottom: 2px solid #d1d1d1;
+    padding: 5px 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+
+.pal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.btn {
+    background-color: rgb(137, 158, 158);
+    color: white;
+    border: none;
+    padding: 12px 20px; /* Aumentar padding para un botón más grande */
+    cursor: pointer;
+    border-radius: 8px; /* Bordes más redondeados */
+    transition: background-color 0.3s, transform 0.2s; /* Añadir transformación */
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Centrar contenido */
+    margin: 10px;
+    font-size: 16px; /* Tamaño de fuente más grande */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.btn:hover {
+    background-color: rgb(18, 28, 28);
+    transform: scale(1.05); /* Efecto de aumento al pasar el mouse */
+}
+
+
+.itemHeader img {
+    width: 60px; /* Aumenta el tamaño */
+    height: 60px; /* Aumenta el tamaño */
+    border-radius: 50%;
+    margin-right: 15px; /* Más espacio entre la imagen y el texto */
+    border: 2px solid #67b2b2; /* Borde alrededor de la imagen */
+}
+
+.itemHeader p {
+    font-size: 20px; /* Aumenta el tamaño de fuente */
+    font-weight: bold; /* Negrita para mayor énfasis */
+    color: #333; 
+}
+
+
+.itemBody {
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-start;
+    justify-content: flex-start;
+    width: 100%; 
+    margin-top: 20px; 
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0; 
+    width: 100%; 
+    padding: 10px;
+    border-radius: 5px; 
+    transition: background-color 0.3s; 
+}
+
+.item:hover {
+    background-color: rgba(67, 130, 130, 0.2); 
+}
+
+.item p {
+    font-size: 18px;
+    font-weight: bold;
+    white-space: nowrap;
+    margin: 0;
+    flex-grow: 1; 
+}
+
+.icon {
+    margin-right: 10px; 
+}
+
+.back-btn {
+    background: transparent; 
+    border: none; 
+    cursor: pointer; 
+    font-size: 20px; 
+}
